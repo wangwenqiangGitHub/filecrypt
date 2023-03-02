@@ -33,3 +33,12 @@ Execute "make" in the root directory.
 2021-08-24  encrypt the file name
 2021-12-25  add the switch to overwrite the files and whether delete the origin files
 ```
+
+# 文件加密解密使用
+
+- 测试命令
+```
+#新建test.txt
+./filecrypt -e -p <密码>(例如:test) -a <加密算法>(例如:aes) aa.txt
+./filecrypt -d -p <密码>(test) -a <加密算法>(aes) <上一次加密生成的文件名字>167775885484724000
+```
